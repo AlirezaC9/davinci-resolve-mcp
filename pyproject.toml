@@ -1,0 +1,31 @@
+[project]
+name = "davinci-resolve-mcp"
+version = "1.0.0"
+description = "Full-featured MCP server for DaVinci Resolve Studio: editing, color, Fusion, audio, subtitles, render and visual frame previews."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+keywords = ["mcp", "davinci-resolve", "video-editing", "claude", "codex", "antigravity", "fusion", "color-grading"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia :: Video :: Non-Linear Editor",
+]
+dependencies = [
+    "mcp>=2.3,<3",
+    "pillow>=10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AlirezaC9/davinci-resolve-mcp"
+Issues = "https://github.com/AlirezaC9/davinci-resolve-mcp/issues"
+
+[project.scripts]
+davinci-resolve-mcp = "davinci_resolve_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
